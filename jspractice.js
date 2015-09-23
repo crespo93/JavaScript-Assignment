@@ -5,7 +5,7 @@
                 // >>> doubleString("hello")
                 // "hellohello"
 
-                return // YOUR CODE HERE
+                return s.concat(s);
             }
 
             // QUESTION 2
@@ -16,7 +16,7 @@
                 // >>> firstThree(["a", "b", "c", "d"])
                 // "a,b,c"
 
-                return // YOUR CODE HERE
+                return arr.slice(0,3);
             }
 
             // QUESTION 3
@@ -32,7 +32,12 @@
                 // >>> bigOrSmall(-2)
                 // "small-2"
 
-                // YOUR CODE HERE
+                if (s>10){
+                            return "big"+s
+                }
+                else {
+                            return "small"+s
+                }
             }
 
             // QUESTION 4
@@ -42,14 +47,25 @@
                 // >>> sumOfFirstNSquares1(3)
                 // 14
 
-                // YOUR CODE HERE
+                var sum=0;
+                var i=1;
+                while (i<=n) {
+                            var sum=sum+i*i;
+                            var i=i+1;
+                }
+                return sum;
             }
 
             // QUESTION 5
             function sumOfFirstNSquares2(n) {
                 // Same as above, but use a for loop!
 
-                // YOUR CODE HERE
+               var sum=0;
+               var i;
+               for (i=1;i<=n;i++) {
+                           var sum=sum+i*i;
+               }
+               return sum;
             }
 
             // You can ignore the stuff below.
